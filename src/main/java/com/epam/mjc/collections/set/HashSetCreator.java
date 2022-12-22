@@ -12,6 +12,9 @@ public class HashSetCreator {
                 int numberEven = sourceList.get(i);
                 for(int d = numberEven;d%2==0;d/=2){
                     hashSet.add(d);
+                    if(d==2){
+                        hashSet.add(1);
+                    }
                 }
             }else{
                 hashSet.add(sourceList.get(i));
